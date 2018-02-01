@@ -29,34 +29,93 @@ class wplms_demos_init{
 
 	private function __construct(){
 		$this->settings = array(
+
+
+			
 			array(
-				'link'=>'http://themes.vibethemes.com/wplms/skins/modern',
-				'image'=>'http://themes.vibethemes.com/wplms/wp-content/uploads/2015/09/wplms_modern-460x314.png',
+				'link'=>'https://wplms.io/demos/demo9/',
+				'image'=>'http://wplms.io/demos/wp-content/uploads/2018/02/demo9-310x412.jpg',
+				'name' => 'DEMO 9'
+			),
+			array(
+				'link'=>'https://wplms.io/demos/demo8/',
+				'image'=>'http://wplms.io/demos/wp-content/uploads/2018/01/demo8-550x1024-310x577.jpg',
+				'name' => 'DEMO 8'
+			),
+			array(
+				'link'=>'https://wplms.io/demos/demo7/',
+				'image'=>'http://wplms.io/demos/wp-content/uploads/2018/01/demo7-554x1024-310x573.jpg',
+				'name' => 'DEMO 7'
+			),
+			array(
+				'link'=>'https://wplms.io/demos/demo6/',
+				'image'=>'http://wplms.io/demos/wp-content/uploads/2018/01/demo6-310x431.jpg',
+				'name' => 'DEMO 6'
+			),
+			array(
+				'link'=>'https://wplms.io/demos/demo5/',
+				'image'=>'http://wplms.io/demos/wp-content/uploads/2018/01/demo5-310x429.jpg',
+				'name' => 'DEMO 5'
+			),
+			array(
+				'link'=>'https://wplms.io/demos/demo4/',
+				'image'=>'http://wplms.io/demos/wp-content/uploads/2018/01/demo4-310x463.jpg',
+				'name' => 'DEMO 4'
+			),
+			array(
+				'link'=>'https://wplms.io/demos/demo3/',
+				'image'=>'http://wplms.io/demos/wp-content/uploads/2018/01/demo3-310x464.jpg',
+				'name' => 'DEMO 3'
+			),
+			array(
+				'link'=>'https://wplms.io/demos/demo2/',
+				'image'=>'http://wplms.io/demos/wp-content/uploads/2018/01/demo2-310x463.jpg',
+				'name' => 'DEMO 2'
+			),
+			array(
+				'link'=>'https://wplms.io/demos/demo1/',
+				'image'=>'http://wplms.io/demos/wp-content/uploads/2018/01/demo1-310x463.jpg',
+				'name' => 'DEMO 1'
+			),
+			array(
+				'link'=>'https://wplms.io/demos/rtl/',
+				'image'=>'http://wplms.io/demos/wp-content/uploads/2018/01/rtl_demo1-310x147.png',
+				'name' => 'RTL'
+			),
+			array(
+				'link'=>'https://wplms.io/demos/multisite/',
+				'image'=>'http://wplms.io/demos/wp-content/uploads/2018/01/multisite-310x212.png',
+				'name' => 'MultiSite'
+			),
+
+			array(
+				'link'=>'https://wplms.io/demos/modern/',
+				'image'=>'http://wplms.io/demos/wp-content/uploads/2018/01/wplms_modern-310x212.png',
 				'name' => 'Modern theme'
 			),
 			array(
-				'link'=>'http://themes.vibethemes.com/wplms/skins/oneinstructor',
-				'image'=>'http://themes.vibethemes.com/wplms/wp-content/uploads/2015/09/oneinstructor-460x364.png',
+				'link'=>'https://wplms.io/demos/oneinstructor',
+				'image'=>'http://wplms.io/demos/wp-content/uploads/2018/01/oneinstructor-310x245.png',
 				'name' => 'One Instructor'
 			),
 			array(
-				'link'=>'http://themes.vibethemes.com/wplms/skins/onecourse',
-				'image'=>'http://themes.vibethemes.com/wplms/wp-content/uploads/2015/10/onecourse-460x296.png',
+				'link'=>'https://wplms.io/demos/onecourse',
+				'image'=>'http://wplms.io/demos/wp-content/uploads/2018/01/onecourse-310x200.png',
 				'name' => 'One Course'
 			),
 			array(
-				'link'=>'http://themes.vibethemes.com/wplms/skins/points_system',
-				'image'=>'http://vibethemes.com/envato/wplms/wp-content/uploads/2015/03/points_system-768x552.png',
+				'link'=>'https://wplms.io/demos/points_system',
+				'image'=>'http://wplms.io/demos/wp-content/uploads/2018/01/points_system-310x223.png',
 				'name' => 'Points System'
 			),
 			array(
-				'link'=>'http://themes.vibethemes.com/wplms/skins/childone',
-				'image'=>'http://themes.vibethemes.com/wplms/wp-content/uploads/2015/10/childone-460x326.png',
+				'link'=>'https://wplms.io/demos/childone',
+				'image'=>'http://wplms.io/demos/wp-content/uploads/2018/01/childone-310x220.png',
 				'name' => 'Child One'
 			),
 			array(
-				'link'=>'http://themes.vibethemes.com/wplms/skins/default',
-				'image'=>'http://themes.vibethemes.com/wplms/wp-content/uploads/2015/10/default-460x331.png',
+				'link'=>'https://wplms.io/demos/default',
+				'image'=>'http://wplms.io/demos/wp-content/uploads/2018/01/default-310x223-310x223.png',
 				'name' => 'Default theme'
 			),
 		);
@@ -77,8 +136,12 @@ class wplms_demos_init{
 		<div id="wplms_demos_slide_panel">
 			<div class="wplms_demos">
 				<span></span>
-				<div class="title"> WPLMS Demos</div>
+				<div class="title"> <a href="https://wplms.io" target="_blank" style="font-size: 16px;color: #222;font-weight: 800;">WPLMS : LMS for WP</a><a href="http://themeforest.net/item/wplms-learning-management-system/6780226" class="buynow main">Buy Now</a></div>
 				<div class="wplms_demo_container">
+					<div class="title_content">
+						<p>4 years, 17000+ sales, Mobile Apps.<br>For Instructors, Schools, Academy and MOOCs. <a href="http://vibethemes.com/wplms-the-best-education-theme-wordpress/" style="border-bottom: 1px dotted #fff;padding-bottom: 5px;" target="_blank">see more reasons !</a></p>
+						
+					</div>
 					<ul>
 					<?php
 						foreach($this->settings as $theme){
@@ -87,7 +150,6 @@ class wplms_demos_init{
 					?>
 					</ul>
 				</div>
-				<div class="buynow"><a href="http://themeforest.net/item/wplms-learning-management-system/6780226">Buy Now</a></div>
 			</div>
 		</div>
 		<?php
@@ -98,24 +160,32 @@ class wplms_demos_init{
 		<style>
 		#wplms_demos_slide_panel{
 			position:fixed;
-			top:100px;
+			top:50px;
 			right:0;
-			border-radius:2px 2px 0 0;
-			width:200px;
+			width:320px;
+			height:calc(100% - 100px);
 			background:#FFF;
 			z-index:99;
 			opacity:1;
-			box-shadow: 0 1px 1px rgba(0,0,0,.6);
-			webkit-transition: all 0.2s ease-in-out;
+			border-radius:0 0 0 5px;
+			box-shadow: 0 1px 10px rgba(0,0,0,.2);
+			transform: translate3d(320px, 0, 0);
+			-webkit-transition: all 0.2s ease-in-out;
 		    -moz-transition: all 0.2s ease-in-out;
 		    -o-transition: all 0.2s ease-in-out;
 	  	    transition: all 0.2s ease-in-out;
+		}#wplms_demos_slide_panel .wplms_demo_container li a {
+		    max-height: 120px;
+		    overflow: hidden;
+		    display: inline-block;
+		    border-radius: 5px;
 		}
 		.wplms_demos{position:relative;}
-		#wplms_demos_slide_panel.close{
-			-webkit-transform: translate3d(200px, 0, 0);
-			transform: translate3d(200px, 0, 0);
+		#wplms_demos_slide_panel.open{
+			-webkit-transform: translate3d(0px, 0, 0);
+			transform: translate3d(0px, 0, 0);
 		}
+		.title_content{padding: 0 15px 10px;font-size: 16px;line-height: 1.3;color:#fff;}
 		#wplms_demos_slide_panel span{
 			position:absolute;
 			top:0;
@@ -128,7 +198,7 @@ class wplms_demos_init{
 			color:#FFF;line-height:1;
 		}
 		#wplms_demos_slide_panel span:after{
-			content: "\f229";
+			content: "\f111";
 			font-family: 'dashicons';
 			color:#FFF;line-height:1;
 			font-size:20px;
@@ -138,28 +208,39 @@ class wplms_demos_init{
 			text-align:center;
 			font-size: 14px;font-weight:600;text-transform:uppercase;
 		}
-		#wplms_demos_slide_panel .buynow{
-			margin:10px 0;
-			text-align:center;
-			font-size:11px;font-weight:600;text-transform:uppercase;
-		}
-		#wplms_demos_slide_panel .buynow a{
-			padding:8px 20px; display:inline-block;
-			color:#FFF; border-radius:4px;
-			background:#82b440;font-weight:600;
+		#wplms_demos_slide_panel a.buynow{
+		    padding: 5px 10px;
+		    display: inline-block;
+		    color: #FFF;
+		    margin: -3px 0 0 10px;
+		    border-radius: 4px;
+		    font-size: 11px;
+		    background: #82b440;
+		    font-weight: 600;
+		    float: right;
+		    margin-top: -;
 		    -webkit-box-shadow: 0 2px 0 #6f9a37;
-    		box-shadow: 0 2px 0 #6f9a37;
+		    box-shadow: 0 2px 0 #6f9a37;
 		}
 		#wplms_demos_slide_panel .wplms_demo_container{
-			height:400px;
+			height:calc(100vh - 100px);
 			background:#444;
 			padding:10px;
 			overflow-y:scroll;
-		}#wplms_demos_slide_panel .wplms_demo_container img{border-radius:4px; box-shadow:0 1px 1px #333;}
-		#wplms_demos_slide_panel .wplms_demo_container li{
-			list-style:none;
-			border:10px solid #444;
-			display:block;
+		}
+
+		#wplms_demos_slide_panel .wplms_demo_container ul{
+		    display: grid;
+		    grid-template-columns: 1fr 1fr;
+		    grid-gap: 10px;
+		    justify-content: space-evenly;
+		}
+		#wplms_demos_slide_panel .wplms_demo_container li:hover{
+			box-shadow: 0 8px 20px 0 rgba(0,0,0,0.2);
+		   -webkit-transform: perspective(400px) translateY(-2px);
+		   -moz-transform: perspective(400px) translateY(-2px);
+		   -o-transform: perspective(400px) translateY(-2px);
+		   transform: perspective(400px) translateY(-2px);
 		}
 		</style>
 		<?php
@@ -170,11 +251,7 @@ class wplms_demos_init{
 		<script>
 			jQuery(document).ready(function($){
 				$('#wplms_demos_slide_panel span').click(function(){
-					if($('html').hasClass('csstransitions')){
-						$('#wplms_demos_slide_panel').toggleClass('close');
-					}else{
-						$('#wplms_demos_slide_panel').toggle(200);
-					}
+					$('#wplms_demos_slide_panel').toggleClass('open');
 				});
 			});
 		</script>
