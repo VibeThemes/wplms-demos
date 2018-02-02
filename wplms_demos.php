@@ -79,7 +79,7 @@ class wplms_demos_init{
 			),
 			array(
 				'link'=>'https://wplms.io/demos/rtl/',
-				'image'=>'http://wplms.io/demos/wp-content/uploads/2018/01/rtl_demo1-310x147.png',
+				'image'=>'http://wplms.io/demos/wp-content/uploads/2018/02/rtl-310x520.jpg',
 				'name' => 'RTL'
 			),
 			array(
