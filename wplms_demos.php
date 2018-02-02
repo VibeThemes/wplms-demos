@@ -3,7 +3,7 @@
 Plugin Name: WPLMS Demos
 Plugin URI: http://www.VibeThemes.com
 Description: WPLMS DEMOS by VibeThemes
-Version: 1.0
+Version: 1.2
 Requires at least: WP 3.8, BuddyPress 1.9 
 Tested up to: 2.0.1
 License: (Themeforest License : http://themeforest.net/licenses)
@@ -34,32 +34,32 @@ class wplms_demos_init{
 			
 			array(
 				'link'=>'https://wplms.io/demos/demo9/',
-				'image'=>'http://wplms.io/demos/wp-content/uploads/2018/02/demo9-310x412.jpg',
+				'image'=>'https://wplms.io/demos/wp-content/uploads/2018/02/demo9-310x412.jpg',
 				'name' => 'DEMO 9'
 			),
 			array(
 				'link'=>'https://wplms.io/demos/demo8/',
-				'image'=>'http://wplms.io/demos/wp-content/uploads/2018/01/demo8-550x1024-310x577.jpg',
+				'image'=>'https://wplms.io/demos/wp-content/uploads/2018/01/demo8-550x1024-310x577.jpg',
 				'name' => 'DEMO 8'
 			),
 			array(
 				'link'=>'https://wplms.io/demos/demo7/',
-				'image'=>'http://wplms.io/demos/wp-content/uploads/2018/01/demo7-554x1024-310x573.jpg',
+				'image'=>'https://wplms.io/demos/wp-content/uploads/2018/01/demo7-554x1024-310x573.jpg',
 				'name' => 'DEMO 7'
 			),
 			array(
 				'link'=>'https://wplms.io/demos/demo6/',
-				'image'=>'http://wplms.io/demos/wp-content/uploads/2018/01/demo6-310x431.jpg',
+				'image'=>'https://wplms.io/demos/wp-content/uploads/2018/01/demo6-310x431.jpg',
 				'name' => 'DEMO 6'
 			),
 			array(
 				'link'=>'https://wplms.io/demos/demo5/',
-				'image'=>'http://wplms.io/demos/wp-content/uploads/2018/01/demo5-310x429.jpg',
+				'image'=>'https://wplms.io/demos/wp-content/uploads/2018/01/demo5-310x429.jpg',
 				'name' => 'DEMO 5'
 			),
 			array(
 				'link'=>'https://wplms.io/demos/demo4/',
-				'image'=>'http://wplms.io/demos/wp-content/uploads/2018/01/demo4-310x463.jpg',
+				'image'=>'https://wplms.io/demos/wp-content/uploads/2018/01/demo4-310x463.jpg',
 				'name' => 'DEMO 4'
 			),
 			array(
@@ -69,12 +69,12 @@ class wplms_demos_init{
 			),
 			array(
 				'link'=>'https://wplms.io/demos/demo2/',
-				'image'=>'http://wplms.io/demos/wp-content/uploads/2018/01/demo2-310x463.jpg',
+				'image'=>'https://wplms.io/demos/wp-content/uploads/2018/01/demo2-310x463.jpg',
 				'name' => 'DEMO 2'
 			),
 			array(
 				'link'=>'https://wplms.io/demos/demo1/',
-				'image'=>'http://wplms.io/demos/wp-content/uploads/2018/01/demo1-310x463.jpg',
+				'image'=>'https://wplms.io/demos/wp-content/uploads/2018/01/demo1-310x463.jpg',
 				'name' => 'DEMO 1'
 			),
 			array(
@@ -84,18 +84,18 @@ class wplms_demos_init{
 			),
 			array(
 				'link'=>'https://wplms.io/demos/multisite/',
-				'image'=>'http://wplms.io/demos/wp-content/uploads/2018/01/multisite-310x212.png',
+				'image'=>'https://wplms.io/demos/wp-content/uploads/2018/01/multisite-310x212.png',
 				'name' => 'MultiSite'
 			),
 
 			array(
 				'link'=>'https://wplms.io/demos/modern/',
-				'image'=>'http://wplms.io/demos/wp-content/uploads/2018/01/wplms_modern-310x212.png',
+				'image'=>'https://wplms.io/demos/wp-content/uploads/2018/01/wplms_modern-310x212.png',
 				'name' => 'Modern theme'
 			),
 			array(
 				'link'=>'https://wplms.io/demos/oneinstructor',
-				'image'=>'http://wplms.io/demos/wp-content/uploads/2018/01/oneinstructor-310x245.png',
+				'image'=>'https://wplms.io/demos/wp-content/uploads/2018/01/oneinstructor-310x245.png',
 				'name' => 'One Instructor'
 			),
 			array(
@@ -105,17 +105,17 @@ class wplms_demos_init{
 			),
 			array(
 				'link'=>'https://wplms.io/demos/points_system',
-				'image'=>'http://wplms.io/demos/wp-content/uploads/2018/01/points_system-310x223.png',
+				'image'=>'https://wplms.io/demos/wp-content/uploads/2018/01/points_system-310x223.png',
 				'name' => 'Points System'
 			),
 			array(
 				'link'=>'https://wplms.io/demos/childone',
-				'image'=>'http://wplms.io/demos/wp-content/uploads/2018/01/childone-310x220.png',
+				'image'=>'https://wplms.io/demos/wp-content/uploads/2018/01/childone-310x220.png',
 				'name' => 'Child One'
 			),
 			array(
 				'link'=>'https://wplms.io/demos/default',
-				'image'=>'http://wplms.io/demos/wp-content/uploads/2018/01/default-310x223-310x223.png',
+				'image'=>'https://wplms.io/demos/wp-content/uploads/2018/01/default-310x223-310x223.png',
 				'name' => 'Default theme'
 			),
 		);
@@ -139,7 +139,7 @@ class wplms_demos_init{
 				<div class="title"> <a href="https://wplms.io" target="_blank" style="font-size: 16px;color: #222;font-weight: 800;">WPLMS : LMS for WP</a><a href="http://themeforest.net/item/wplms-learning-management-system/6780226" class="buynow main">Buy Now</a></div>
 				<div class="wplms_demo_container">
 					<div class="title_content">
-						<p>4 years, 17000+ sales, Mobile Apps.<br>For Instructors, Schools, Academy and MOOCs. <a href="http://vibethemes.com/wplms-the-best-education-theme-wordpress/" style="border-bottom: 1px dotted #fff;padding-bottom: 5px;" target="_blank">see more reasons !</a></p>
+						<p>4 years, 17000+ sales, Mobile Apps.<br>For Instructors, Schools, Academy and MOOCs. <a href="http://vibethemes.com/wplms-the-best-education-theme-wordpress/" style="border-bottom: 1px dotted #fff;padding-bottom: 5px;color: #82b440;" target="_blank">see more reasons !</a></p>
 						
 					</div>
 					<ul>
@@ -191,15 +191,14 @@ class wplms_demos_init{
 			top:0;
 			left:-40px;
 			z-index:99;
-			padding:10px;
+			padding:11px;
 			display:block;
-			border-radius:2px 2px 0 0;
+			border-radius:2px 0 0 2px;
 			background:#444;
 			color:#FFF;line-height:1;
 		}
 		#wplms_demos_slide_panel span:after{
-			content: "\f111";
-			font-family: 'dashicons';
+			content:"\f013";font-family:'fontawesome';
 			color:#FFF;line-height:1;
 			font-size:20px;
 		}
@@ -208,6 +207,7 @@ class wplms_demos_init{
 			text-align:center;
 			font-size: 14px;font-weight:600;text-transform:uppercase;
 		}
+
 		#wplms_demos_slide_panel a.buynow{
 		    padding: 5px 10px;
 		    display: inline-block;
