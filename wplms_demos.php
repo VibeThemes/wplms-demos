@@ -31,7 +31,11 @@ class wplms_demos_init{
 		$this->settings = array(
 
 
-			
+			array(
+				'link'=>'https://wplms.io/demos/demo10/',
+				'image'=>'http://wplms.io/demos/wp-content/uploads/2018/05/wplms_demo10.jpg',
+				'name' => 'DEMO 10'
+			),
 			array(
 				'link'=>'https://wplms.io/demos/demo9/',
 				'image'=>'https://wplms.io/demos/wp-content/uploads/2018/02/demo9-310x412.jpg',
