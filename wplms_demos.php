@@ -3,7 +3,7 @@
 Plugin Name: WPLMS Demos
 Plugin URI: http://www.VibeThemes.com
 Description: WPLMS DEMOS by VibeThemes
-Version: 1.4
+Version: 1.5
 Requires at least: WP 3.8, BuddyPress 1.9 
 Tested up to: 2.0.1
 License: (Themeforest License : http://themeforest.net/licenses)
