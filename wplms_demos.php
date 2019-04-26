@@ -3,7 +3,7 @@
 Plugin Name: WPLMS Demos
 Plugin URI: http://www.VibeThemes.com
 Description: WPLMS DEMOS by VibeThemes
-Version: 1.2
+Version: 1.4
 Requires at least: WP 3.8, BuddyPress 1.9 
 Tested up to: 2.0.1
 License: (Themeforest License : http://themeforest.net/licenses)
@@ -29,8 +29,26 @@ class wplms_demos_init{
 
 	private function __construct(){
 		$this->settings = array(
-
-
+			array(
+				'link'=>'https://wplms.io/demos/demo14/',
+				'image'=>'https://wplms.io/demos/wp-content/uploads/2019/04/wplms_demo14.jpg',
+				'name' => 'DEMO 14'
+			),
+			array(
+				'link'=>'https://wplms.io/demos/demo12/',
+				'image'=>'https://wplms.io/demos/wp-content/uploads/2019/03/wplms_demo13.jpg',
+				'name' => 'DEMO 13'
+			),
+			array(
+				'link'=>'https://wplms.io/demos/demo12/',
+				'image'=>'https://wplms.io/demos/wp-content/uploads/2019/02/wplms_demo12.jpg',
+				'name' => 'DEMO 12'
+			),
+			array(
+				'link'=>'https://wplms.io/demos/demo11/',
+				'image'=>'https://wplms.io/demos/wp-content/uploads/2019/02/wplms_demo11.jpg',
+				'name' => 'DEMO 11'
+			),
 			array(
 				'link'=>'https://wplms.io/demos/demo10/',
 				'image'=>'http://wplms.io/demos/wp-content/uploads/2018/05/wplms_demo10.jpg',
@@ -269,7 +287,7 @@ function wplms_demos_update() {
 	$config = array(
 		'base'      => plugin_basename( __FILE__ ), //required
 		'dashboard' => true,
-		'repo_uri'  => 'http://www.vibethemes.com/',  //required
+		'repo_uri'  => 'https://wplms.io/',  //required
 		'repo_slug' => 'wplms-demos',  //required
 	);
 	new WPLMS_Demos_Update( $config );
