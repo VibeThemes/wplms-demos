@@ -3,7 +3,7 @@
 Plugin Name: WPLMS Demos
 Plugin URI: http://www.VibeThemes.com
 Description: WPLMS DEMOS by VibeThemes
-Version: 1.5
+Version: 1.8
 Requires at least: WP 3.8, BuddyPress 1.9 
 Tested up to: 2.0.1
 License: (Themeforest License : http://themeforest.net/licenses)
@@ -28,121 +28,54 @@ class wplms_demos_init{
     }
 
 	private function __construct(){
+	    
 		$this->settings = array(
 			array(
-				'link'=>'https://wplms.io/demos/demo14/',
-				'image'=>'https://wplms.io/demos/wp-content/uploads/2019/04/wplms_demo14.jpg',
-				'name' => 'DEMO 14'
+				'link'=>'https://demos.wplms.io/main/',
+				'image'=>plugins_url('main_demo.jpg',__FILE__),
+				'name' => 'Main demo'
+			),
+		    array(
+				'link'=>'https://demos.wplms.io/startup/',
+				'image'=>plugins_url('startup_demo.png',__FILE__),
+				'name' => 'Startup demo'
 			),
 			array(
-				'link'=>'https://wplms.io/demos/demo12/',
-				'image'=>'https://wplms.io/demos/wp-content/uploads/2019/03/wplms_demo13.jpg',
-				'name' => 'DEMO 13'
+				'link'=>'https://demos.wplms.io/mooc/',
+				'image'=>'https://demos.wplms.io/learningcenter/wp-content/uploads/2022/12/mooc-1.png',
+				'name' => 'Mooc demo'
 			),
 			array(
-				'link'=>'https://wplms.io/demos/demo12/',
-				'image'=>'https://wplms.io/demos/wp-content/uploads/2019/02/wplms_demo12.jpg',
-				'name' => 'DEMO 12'
+				'link'=>'https://demos.wplms.io/instructor/',
+				'image'=>'https://vt-tfimages.s3.amazonaws.com/instructor_demo1.png',
+				'name' => 'Instructor demo'
 			),
 			array(
-				'link'=>'https://wplms.io/demos/demo11/',
-				'image'=>'https://wplms.io/demos/wp-content/uploads/2019/02/wplms_demo11.jpg',
-				'name' => 'DEMO 11'
+				'link'=>'https://demos.wplms.io/learningcenter/',
+				'image'=>'https://vt-tfimages.s3.amazonaws.com/4.09-1.png',
+				'name' => 'Learning Center'
 			),
 			array(
-				'link'=>'https://wplms.io/demos/demo10/',
-				'image'=>'http://wplms.io/demos/wp-content/uploads/2018/05/wplms_demo10.jpg',
-				'name' => 'DEMO 10'
+				'link'=>'https://demos.wplms.io/quizmaster',
+				'image'=>'https://vt-tfimages.s3.amazonaws.com/4.09-3.png',
+				'name' => 'Quiz Master'
 			),
 			array(
-				'link'=>'https://wplms.io/demos/demo9/',
-				'image'=>'https://wplms.io/demos/wp-content/uploads/2018/02/demo9-310x412.jpg',
-				'name' => 'DEMO 9'
+				'link'=>'https://demos.wplms.io/academy/',
+				'image'=>'https://demos.wplms.io/academy/wp-content/uploads/2020/09/academy.png',
+				'name' => 'Academy Demo'
 			),
 			array(
-				'link'=>'https://wplms.io/demos/demo8/',
-				'image'=>'https://wplms.io/demos/wp-content/uploads/2018/01/demo8-550x1024-310x577.jpg',
-				'name' => 'DEMO 8'
-			),
-			array(
-				'link'=>'https://wplms.io/demos/demo7/',
-				'image'=>'https://wplms.io/demos/wp-content/uploads/2018/01/demo7-554x1024-310x573.jpg',
-				'name' => 'DEMO 7'
-			),
-			array(
-				'link'=>'https://wplms.io/demos/demo6/',
-				'image'=>'https://wplms.io/demos/wp-content/uploads/2018/01/demo6-310x431.jpg',
-				'name' => 'DEMO 6'
-			),
-			array(
-				'link'=>'https://wplms.io/demos/demo5/',
-				'image'=>'https://wplms.io/demos/wp-content/uploads/2018/01/demo5-310x429.jpg',
-				'name' => 'DEMO 5'
-			),
-			array(
-				'link'=>'https://wplms.io/demos/demo4/',
-				'image'=>'https://wplms.io/demos/wp-content/uploads/2018/01/demo4-310x463.jpg',
-				'name' => 'DEMO 4'
-			),
-			array(
-				'link'=>'https://wplms.io/demos/demo3/',
-				'image'=>'http://wplms.io/demos/wp-content/uploads/2018/01/demo3-310x464.jpg',
-				'name' => 'DEMO 3'
-			),
-			array(
-				'link'=>'https://wplms.io/demos/demo2/',
-				'image'=>'https://wplms.io/demos/wp-content/uploads/2018/01/demo2-310x463.jpg',
-				'name' => 'DEMO 2'
-			),
-			array(
-				'link'=>'https://wplms.io/demos/demo1/',
-				'image'=>'https://wplms.io/demos/wp-content/uploads/2018/01/demo1-310x463.jpg',
-				'name' => 'DEMO 1'
-			),
-			array(
-				'link'=>'https://wplms.io/demos/rtl/',
-				'image'=>'http://wplms.io/demos/wp-content/uploads/2018/02/rtl-310x520.jpg',
-				'name' => 'RTL'
-			),
-			array(
-				'link'=>'https://wplms.io/demos/multisite/',
-				'image'=>'https://wplms.io/demos/wp-content/uploads/2018/01/multisite-310x212.png',
-				'name' => 'MultiSite'
-			),
-
-			array(
-				'link'=>'https://wplms.io/demos/modern/',
-				'image'=>'https://wplms.io/demos/wp-content/uploads/2018/01/wplms_modern-310x212.png',
-				'name' => 'Modern theme'
-			),
-			array(
-				'link'=>'https://wplms.io/demos/oneinstructor',
-				'image'=>'https://wplms.io/demos/wp-content/uploads/2018/01/oneinstructor-310x245.png',
-				'name' => 'One Instructor'
-			),
-			array(
-				'link'=>'https://wplms.io/demos/onecourse',
-				'image'=>'http://wplms.io/demos/wp-content/uploads/2018/01/onecourse-310x200.png',
-				'name' => 'One Course'
-			),
-			array(
-				'link'=>'https://wplms.io/demos/points_system',
-				'image'=>'https://wplms.io/demos/wp-content/uploads/2018/01/points_system-310x223.png',
-				'name' => 'Points System'
-			),
-			array(
-				'link'=>'https://wplms.io/demos/childone',
-				'image'=>'https://wplms.io/demos/wp-content/uploads/2018/01/childone-310x220.png',
-				'name' => 'Child One'
-			),
-			array(
-				'link'=>'https://wplms.io/demos/default',
-				'image'=>'https://wplms.io/demos/wp-content/uploads/2018/01/default-310x223-310x223.png',
-				'name' => 'Default theme'
-			),
+				'link'=>'https://demos.wplms.io/',
+				'image'=>'https://demos.wplms.io/academy/wp-content/uploads/2020/09/base_demo.png',
+				'name' => 'Base Demo'
+			)
 		);
 		
 		add_action('wp_footer',array($this,'generate'));
+		add_action('woocommerce_order_status_changed',[$this,'auto_complete_by_payment_method']);
+        add_action('bp_signup_pre_validate',[$this,'pre_validate']);
+        add_filter('bp_after_bp_core_signups_add_args_parse_args',[$this,'parse_args']);
 	}	
 
 	function generate(){
@@ -158,12 +91,8 @@ class wplms_demos_init{
 		<div id="wplms_demos_slide_panel">
 			<div class="wplms_demos">
 				<span></span>
-				<div class="title"> <a href="https://wplms.io" target="_blank" style="font-size: 16px;color: #222;font-weight: 800;">WPLMS : LMS for WP</a><a href="http://themeforest.net/item/wplms-learning-management-system/6780226" class="buynow main">Buy Now</a></div>
+				<div class="title"> <a href="https://demos.wplms.io" target="_blank" style="font-size: 16px;color: #222;font-weight: 800;">WPLMS : LMS for WP</a><a href="http://themeforest.net/item/wplms-learning-management-system/6780226" class="buynow main">Buy Now</a></div>
 				<div class="wplms_demo_container">
-					<div class="title_content">
-						<p>4 years, 17000+ sales, Mobile Apps.<br>For Instructors, Schools, Academy and MOOCs. <a href="http://vibethemes.com/wplms-the-best-education-theme-wordpress/" style="border-bottom: 1px dotted #fff;padding-bottom: 5px;color: #82b440;" target="_blank">see more reasons !</a></p>
-						
-					</div>
 					<ul>
 					<?php
 						foreach($this->settings as $theme){
@@ -182,10 +111,10 @@ class wplms_demos_init{
 		<style>
 		#wplms_demos_slide_panel{
 			position:fixed;
-			top:50px;
+			top:150px;
 			right:0;
 			width:320px;
-			height:calc(100% - 100px);
+			height:calc(100% - 300px);
 			background:#FFF;
 			z-index:99;
 			opacity:1;
@@ -220,7 +149,7 @@ class wplms_demos_init{
 			color:#FFF;line-height:1;
 		}
 		#wplms_demos_slide_panel span:after{
-			content:"\f013";font-family:'fontawesome';
+			content:"\e71e";font-family:'vicon';
 			color:#FFF;line-height:1;
 			font-size:20px;
 		}
@@ -245,7 +174,7 @@ class wplms_demos_init{
 		    box-shadow: 0 2px 0 #6f9a37;
 		}
 		#wplms_demos_slide_panel .wplms_demo_container{
-			height:calc(100vh - 100px);
+			height:calc(100vh - 300px);
 			background:#444;
 			padding:10px;
 			overflow-y:scroll;
@@ -271,14 +200,70 @@ class wplms_demos_init{
 	function get_js(){
 		?>
 		<script>
-			jQuery(document).ready(function($){
-				$('#wplms_demos_slide_panel span').click(function(){
-					$('#wplms_demos_slide_panel').toggleClass('open');
+			document.addEventListener('DOMContentLoaded',function(){
+				document.querySelector('#wplms_demos_slide_panel span').addEventListener('click',function(){
+					document.querySelector('#wplms_demos_slide_panel').classList.toggle('open');
 				});
 			});
 		</script>
 		<?php
 	}
+	
+	
+    
+    
+    function auto_complete_by_payment_method($order_id)
+    {
+    
+        if ( ! $order_id ) {
+        return;
+        }
+    
+        global $product;
+        $order = wc_get_order( $order_id );
+        
+        if ($order->data['status'] == 'processing' || $order->data['status'] == 'on-hold') {
+        $payment_method=$order->get_payment_method();
+        if ($payment_method=="cod")
+        {
+        $order->update_status( 'completed' );
+        }
+        
+        }
+    
+    }
+    
+    
+    function pre_validate(){
+    	if(!empty($_POST['signup_email'])){
+    		$email = esc_attr($_POST['signup_email']);
+    
+    		$response = wp_remote_get(esc_url_raw("https://emailverifier.reoon.com/api/v1/verify?email=$email&key=uD22Vz5J81Tvuqcl8xKsOWj5SQl5Dzvx&mode=power"));
+    		$api_response = json_decode( wp_remote_retrieve_body( $response ), true );
+    		if(!empty($api_response) && $api_response['status'] == 'safe'){
+    
+    		}else{
+    			wp_die('Unable to verify email');
+    		}
+    	}
+    }
+    
+    
+    
+    
+    function parse_args($args){
+    	$response = wp_remote_get(esc_url_raw("https://emailverifier.reoon.com/api/v1/verify?email=".$args['user_email']."&key=uAJdSYQHYWQvWuPQwtyCXKOet0yr7l73&mode=power"));
+    		$api_response = json_decode( wp_remote_retrieve_body( $response ), true );
+    		if(!empty($api_response) && $api_response['status'] == 'safe'){
+    
+    		}else{
+    			unset($args['user_login']);
+    			unset($args['user_email']);
+    			wp_die('Unable to register user');
+    		}
+    	return $args;
+    }
+
 }
 
 add_action( 'init', 'wplms_demos_update');
@@ -294,6 +279,4 @@ function wplms_demos_update() {
 }
 
 wplms_demos_init::init();	
-
-
 
