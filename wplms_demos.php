@@ -3,7 +3,7 @@
 Plugin Name: WPLMS Demos
 Plugin URI: http://www.VibeThemes.com
 Description: WPLMS DEMOS by VibeThemes
-Version: 1.8
+Version: 1.9
 Requires at least: WP 3.8, BuddyPress 1.9 
 Tested up to: 2.0.1
 License: (Themeforest License : http://themeforest.net/licenses)
@@ -31,6 +31,11 @@ class wplms_demos_init{
 	    
 		$this->settings = array(
 			array(
+				'link'=>'https://demos.wplms.io/oneinstructor/',
+				'image'=>plugins_url('single_instructor.png',__FILE__),
+				'name' => 'Single Instructor'
+			),
+			array(
 				'link'=>'https://demos.wplms.io/main/',
 				'image'=>plugins_url('main_demo.jpg',__FILE__),
 				'name' => 'Main demo'
@@ -54,6 +59,11 @@ class wplms_demos_init{
 				'link'=>'https://demos.wplms.io/learningcenter/',
 				'image'=>'https://vt-tfimages.s3.amazonaws.com/4.09-1.png',
 				'name' => 'Learning Center'
+			),
+			array(
+				'link'=>'https://demos.wplms.io/school/',
+				'image'=>plugins_url('sc.jpg',__FILE__),
+				'name' => 'School Demo'
 			),
 			array(
 				'link'=>'https://demos.wplms.io/quizmaster',
@@ -90,7 +100,8 @@ class wplms_demos_init{
 		?>
 		<div id="wplms_demos_slide_panel">
 			<div class="wplms_demos">
-				<span></span>
+				<span class="open_drawer"></span>
+				<span class="test_rtl"></span>
 				<div class="title"> <a href="https://demos.wplms.io" target="_blank" style="font-size: 16px;color: #222;font-weight: 800;">WPLMS : LMS for WP</a><a href="http://themeforest.net/item/wplms-learning-management-system/6780226" class="buynow main">Buy Now</a></div>
 				<div class="wplms_demo_container">
 					<ul>
@@ -109,6 +120,7 @@ class wplms_demos_init{
 	function get_css(){
 		?>
 		<style>
+
 		#wplms_demos_slide_panel{
 			position:fixed;
 			top:150px;
@@ -116,6 +128,7 @@ class wplms_demos_init{
 			width:320px;
 			height:calc(100% - 300px);
 			background:#FFF;
+			font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue",sans-serif;
 			z-index:99;
 			opacity:1;
 			border-radius:0 0 0 5px;
@@ -146,12 +159,18 @@ class wplms_demos_init{
 			display:block;
 			border-radius:2px 0 0 2px;
 			background:#444;
+			cursor:pointer;
 			color:#FFF;line-height:1;
 		}
 		#wplms_demos_slide_panel span:after{
 			content:"\e71e";font-family:'vicon';
 			color:#FFF;line-height:1;
 			font-size:20px;
+		}
+		#wplms_demos_slide_panel span.test_rtl{top:45px;}
+		#wplms_demos_slide_panel span.test_rtl:after{
+			content:'RTL';
+			font-size:12px;
 		}
 		#wplms_demos_slide_panel .title{
 			padding:10px;
@@ -178,6 +197,7 @@ class wplms_demos_init{
 			background:#444;
 			padding:10px;
 			overflow-y:scroll;
+			min-height: 320px;
 		}
 
 		#wplms_demos_slide_panel .wplms_demo_container ul{
@@ -201,8 +221,17 @@ class wplms_demos_init{
 		?>
 		<script>
 			document.addEventListener('DOMContentLoaded',function(){
-				document.querySelector('#wplms_demos_slide_panel span').addEventListener('click',function(){
+				document.querySelector('#wplms_demos_slide_panel span.open_drawer').addEventListener('click',function(){
 					document.querySelector('#wplms_demos_slide_panel').classList.toggle('open');
+				});
+
+				document.querySelector('#wplms_demos_slide_panel span.test_rtl').addEventListener('click',function(){
+					if(document.querySelector('body').style.direction == 'rtl'){
+						document.querySelector('body').style.direction = 'ltr';
+					}else{
+						document.querySelector('body').style.direction = 'rtl';	
+					}
+					
 				});
 			});
 		</script>
